@@ -16,13 +16,18 @@ void setup() {
   Serial.begin(9600);    // Initialize serial communication at 9600 bps
 }
 
-void loop() {
+void loop()
+ {
   btn_state = digitalRead(btn);  // Reads the input of pin 2 and save it in btn_state
   
-  if (btn_state == HIGH && last_btn_state == LOW) { // If the button is pressed and was previously not pressed
+  if (btn_state == HIGH && last_btn_state == LOW)
+   { 
     digitalWrite(LED, HIGH);     // Turn on the LED
     Serial.println("Button Pressed");  // Print "Button Pressed" to the Serial Monitor
-  } else if (btn_state == LOW && last_btn_state == HIGH) {
+  }
+  
+   else if (btn_state == LOW && last_btn_state == HIGH)
+  {
     digitalWrite(LED, LOW);      // Turn off the LED
   }
   
