@@ -1,61 +1,62 @@
-# Arduino UNO with Button Switch: Simple Guide and Code
+### Push Button using Arduino UNO
 
-#### Description
-In this project, you'll use a button switch to turn an LED on and off, with the state of the button (pressed or not pressed) displayed on the Serial Monitor.
+#### Project Overview
 
-# Components Needed
-- Arduino UNO
-- Push button switch
-- 10k ohm resistor
-- LED
-- 220-ohm resistor
-- Breadboard
-- Jumper wires
+This project demonstrates how to control an LED using a push button with an Arduino UNO. When the button is pressed, the LED turns on, and when it is released, the LED turns off.
 
-# Instructions
+#### Components Needed
 
-1. **Connect the Button and LED to the Breadboard:**
-   - Insert the push button switch into the breadboard.
-   - Place the LED on the breadboard.
+1. **Arduino UNO Board**
+2. **LED**
+3. **Push Button**
+4. **Resistor (220 ohms)**
+5. **Breadboard**
+6. **Jumper Wires**
 
-2. **Wire the Button to the Arduino:**
-   - Connect one leg of the push button to pin 2 on the Arduino.
-   - Connect the other leg of the push button to 5V on the Arduino.
-   - Connect a 10k ohm resistor from the leg connected to pin 2 to GND on the Arduino.
+#### Block Diagram
 
-3. **Wire the LED to the Arduino:**
-   - Connect the longer leg (anode) of the LED to pin 10 on the Arduino.
-   - Connect the shorter leg (cathode) of the LED to one end of the 220-ohm resistor.
-   - Connect the other end of the 220-ohm resistor to GND on the Arduino.
+![Push Button Diagram](block_diagram.png)
 
-# Complete Process
-1. **Connect the Button and LED to the Breadboard:**
-   - Insert the push button switch into the breadboard.
-   - Place the LED on the breadboard.
+#### Circuit Wiring
 
-2. **Wire the Button to the Arduino:**
-   - Connect one leg of the push button to pin 2 on the Arduino.
-   - Connect the other leg of the push button to 5V on the Arduino.
-   - Connect a 10k ohm resistor from the leg connected to pin 2 to GND on the Arduino.
+1. **LED and Button:**
+   - Connect the LED's positive (longer) leg to pin 10 (LED) on the Arduino through a 220-ohm resistor.
+   - Connect the LED's negative (shorter) leg to the ground (GND) on the Arduino.
+   - Connect one leg of the push button to pin 2 (btn) on the Arduino.
+   - Connect the other leg of the push button to the 5V pin on the Arduino.
 
-3. **Wire the LED to the Arduino:**
-   - Connect the longer leg (anode) of the LED to pin 10 on the Arduino.
-   - Connect the shorter leg (cathode) of the LED to one end of the 220-ohm resistor.
-   - Connect the other end of the 220-ohm resistor to GND on the Arduino.
+#### Instructions
 
-4. **Upload the Code:**
-   - Open the Arduino IDE and copy the code provided above into the IDE.
-   - Connect your Arduino to your computer using a USB cable.
-   - Click the Upload button to upload the code to your Arduino.
+1. **Assemble the Circuit:**
+   - Set up the circuit as per the wiring instructions.
+   - Ensure all connections are secure and components are placed correctly on the breadboard.
 
-5. **Open the Serial Monitor:**
-   - In the Arduino IDE, go to `Tools` -> `Serial Monitor`.
-   - Set the baud rate to 9600.
-   - Press the button to see "Button Pressed" messages displayed on the Serial Monitor, along with the LED turning on. When the button is released, the LED turns off, and no messages are printed.
+2. **Upload the Code:**
+   - Copy and paste the provided code into the Arduino IDE.
+   - Verify and upload the code to your Arduino board.
+
+3. **Observe the LED Behavior:**
+   - When the push button is pressed, the LED turns on.
+   - When the push button is released, the LED turns off.
+
+#### Project Operation
+
+- **Initialization:**
+  - The Arduino initializes pin 10 (LED) as an output and pin 2 (btn) as an input.
+
+- **Button Control:**
+  - When the button is pressed (transition from LOW to HIGH state), the LED turns on, and "Button Pressed" is printed to the Serial Monitor.
+  - When the button is released (transition from HIGH to LOW state), the LED turns off.
+
+#### Applications
+
+- **Simple Switch Control:** Use the push button to control various devices or functions in your projects.
+- **Interactive Projects:** Incorporate push buttons for user interaction in your Arduino-based projects.
+- **Learning and Experimentation:** Ideal for learning about digital input and output control with Arduino.
 
 ---
 
-### Whether you're working on electronics projects, IoT applications, or robotics innovations, Projects Learner is your go-to platform for guidance and expertise.
+### For more Arduino projects and tutorials, visit Projects Learner - your destination for hands-on learning and experimentation with electronics and programming.
 
 🌐 [projectslearner.com](https://www.projectslearner.com)  
 📧 [projectslearner@gmail.com](mailto:projectslearner@gmail.com)  
@@ -64,4 +65,4 @@ In this project, you'll use a button switch to turn an LED on and off, with the 
 ▶️ [YouTube](https://www.youtube.com/@ProjectsLearner)  
 📘 [LinkedIn](https://www.linkedin.com/in/projectslearner)  
 
-## Made for you with ❣️ from ProjectsLearner
+## Crafted with passion by ProjectsLearner 
